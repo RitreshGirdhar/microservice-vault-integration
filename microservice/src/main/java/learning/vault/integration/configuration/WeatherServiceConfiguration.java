@@ -4,8 +4,9 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @Data
-@ConfigurationProperties("example")
-public class MyConfiguration {
+@ConfigurationProperties("weather")
+public class WeatherServiceConfiguration {
 	String username;
 	String password;
+	String uri;
 }
