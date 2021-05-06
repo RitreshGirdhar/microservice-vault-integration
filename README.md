@@ -26,6 +26,10 @@ Now create secret for weather service
 ```
 docker exec -it 9ad13a11b2d5 sh
 / # vault kv put secret/weather-service weather.username=demouser weather.password=demopassword
+Get "https://127.0.0.1:8200/v1/sys/internal/ui/mounts/secret/weather-service": http: server gave HTTP response to HTTPS client
+/ # export VAULT_ADDR="http://127.0.0.1:8200"
+/ # export export VAULT_TOKEN="myroot"
+/ # vault kv put secret/weather-service weather.username=demouser weather.password=demopassword
 Key              Value
 ---              -----
 created_time     2021-05-05T15:45:20.1485816Z
