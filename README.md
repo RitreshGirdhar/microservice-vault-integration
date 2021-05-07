@@ -1,4 +1,4 @@
-# Spring Cloud based Microservice and Hashcorp vault integration
+# Spring Cloud application integration with Hashcorp vault
 
 ### Pre-requisite
 * Some knowledge of Spring boot and docker will be helpful.
